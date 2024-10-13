@@ -31,12 +31,15 @@ The following Python packages are required:
 Install the necessary packages with the following command:
 
 bash
+
 pip install pywin32 SpeechRecognition pygame requests retrying
 
 **Bard API Key**
+
 Set your Bard API key as an environment variable using the following command:
 
 bash
+
 export BARD_API_KEY=your_bard_api_key
 
 Alternatively, set the key directly in the script:
@@ -52,7 +55,8 @@ Voice Commands: Speak commands such as:
 "Open website" followed by a site name like Google or YouTube.
 "The time" to get the current time.
 "Open" followed by app names like Spotify, Notepad, or Calculator.
-Example Commands
+
+**Example Commands**
 Ask a Question:
 "More information"
 Then ask a question like: "What is AI?"
@@ -70,9 +74,11 @@ Music Files
 To add or change the music files, modify the music_paths dictionary with appropriate paths to your music files:
 
 python
+
 music_paths = {
     "Song Name": "C:\\path\\to\\song.mp3",
 }
 
 ## API Reference
+
 Bard API: The script communicates with the Bard API to fetch answers to user questions. Ensure your API key is valid and set correctly.
