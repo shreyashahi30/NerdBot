@@ -30,16 +30,16 @@ The following Python packages are required:
 
 Install the necessary packages with the following command:
 
-```bash
+bash
 pip install pywin32 SpeechRecognition pygame requests retrying
 
-## Bard API Key
+**Bard API Key**
 Set your Bard API key as an environment variable using the following command:
 
 bash
 export BARD_API_KEY=your_bard_api_key
 
-**Alternatively, set the key directly in the script:**
+Alternatively, set the key directly in the script:
 
 python
 os.environ['BARD_API_KEY'] = "your_bard_api_key"
@@ -63,7 +63,7 @@ Open Website:
 Get Current Time:
 "What is the time?"
 
-##Error Handling
+## Error Handling
 The script includes a retry mechanism for API calls using retrying, which retries failed requests up to 3 times with exponential backoff.
 Exception handling is added for recognizing voice commands, API responses, and playing music.
 Music Files
@@ -74,5 +74,5 @@ music_paths = {
     "Song Name": "C:\\path\\to\\song.mp3",
 }
 
-**API Reference**
+## API Reference
 Bard API: The script communicates with the Bard API to fetch answers to user questions. Ensure your API key is valid and set correctly.
